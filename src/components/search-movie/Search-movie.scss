@@ -1,0 +1,14 @@
+.search-bar{
+    position: relative;
+    width: 100%;
+  
+    input {
+      width: calc(100% - 30px); /* Учитываем ширину изображения и оставляем место для текста */
+      padding-left: 60px; /* Чтобы учесть ширину изображения и предоставить место для текста */
+      background-image: url('../../resources/img/icon-search.svg');
+      background-repeat: no-repeat;
+      background-position: 5px center; /* Регулируйте отступ слева по вашему усмотрению */
+      background-size: 32px 32px;
+      height: 32px;
+    }
+}

@@ -1,6 +1,7 @@
 body {
 	font-family: "League Spartan", sans-serif;
 	font-size: 15px;
+	color: #FFF;
 }
 
 /* Reset and base styles  */
@@ -112,4 +113,18 @@ label {
 
 legend {
 	display: block;
+}
+
+.page{
+	background-color: #10141E;
+	height: 150vh;
+	padding-top: 64px;
+	padding-left: 164px; 
+	padding: 64px 64px 0 164px;
+}
+
+main{
+	width: 1240px;
+	height: 100%;
+	margin: 0 auto;
 }
