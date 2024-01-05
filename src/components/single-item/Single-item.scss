@@ -1,0 +1,38 @@
+.single-item{
+    position: relative;
+    max-width: 470px;
+    height: 230px;
+    border-radius: 8px;
+    padding: 16px 24px 24px 24px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &__text-block{
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.play-btn{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.25);
+    padding: 9px 24px 9px 9px;
+    border-radius: 29px;
+    gap: 19px;
+    font-size: 18px; 
+}
+.bookmark-item{
+    
+}
+

@@ -1,8 +1,10 @@
-import React from 'react'
+import SingleItem from "../single-item/Single-item"
 
 function TrendingItems() {
   return (
-    <div>TrendingItems</div>
+    <div>
+      <SingleItem/>
+    </div>
   )
 }
 

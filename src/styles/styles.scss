@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
+
 body {
-	font-family: "League Spartan", sans-serif;
+	font-family: "Outfit", sans-serif;
 	font-size: 15px;
 	color: #FFF;
 }
@@ -124,7 +126,7 @@ legend {
 }
 
 main{
-	width: 1240px;
+	max-width: 1240px;
 	height: 100%;
 	margin: 0 auto;
 }

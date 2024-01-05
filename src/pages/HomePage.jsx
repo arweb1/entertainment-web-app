@@ -1,8 +1,10 @@
-import React from 'react'
+import TrendingItems from "../components/trending-items/Trending-items"
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <TrendingItems/>
+    </div>
   )
 }
 
