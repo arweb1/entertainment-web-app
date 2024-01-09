@@ -4,8 +4,6 @@
     height: 230px;
     border-radius: 8px;
     padding: 16px 24px 24px 24px;
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
 
     &::before{
         content: '';
@@ -16,10 +14,73 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.1);
     }
-
-    &__text-block{
+    .text-block h3{
         font-size: 24px;
         font-weight: 500;
+    }
+    .text-block, .play, .bookmark-item{
+        position: absolute;
+    }
+    .text-block{
+        bottom: 24px;
+
+        .details{
+            color: #fff;
+            font-weight: 300;
+            opacity: .75 ;
+            display: flex;
+            align-items: center;
+            gap: 8px  
+        }
+        .type{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            &:before, &:after{
+                content: '';
+                width: 3px;
+                height: 3px;
+                background-color: #fff;
+                display: block;
+                border-radius: 50%;
+            }
+        }
+    }
+    .bookmark-item{
+        top: 16px;
+        right: 24px;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .play{
+        display: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover{
+        cursor: pointer;
+        .play{
+            display: block;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), rgba(211, 211, 211, 0.082) 50% / cover no-repeat;
+        opacity: 0; /* Изначально делаем непрозрачным, чтобы видеть только изображение */
+        transition: opacity 0.3s ease; /* Добавляем плавное изменение прозрачности */
+    }
+
+    /* При наведении на контейнер, изменяем прозрачность псевдоэлемента */
+    &:hover::before {
+        opacity: 1;
     }
 }
 
@@ -32,7 +93,3 @@
     gap: 19px;
     font-size: 18px; 
 }
-.bookmark-item{
-    
-}
-

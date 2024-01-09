@@ -2,7 +2,8 @@ import './Single-item.scss';
 import playBtn from '../../resources/img/icon-play.svg';
 import bookmarkItemFull from '../../resources/img/icon-bookmark-full.svg';
 import bookmarkItemEmpty from '../../resources/img/icon-bookmark-empty.svg';
-import thumbnail from '../../resources/thumbnails/beyond-earth/regular/medium.jpg';
+import thumbnail from '../../resources/thumbnails/beyond-earth/regular/large.jpg';
+import typeIcon from '../../resources/img/icon-category-movie.svg'
 
 function SingleItem() {
   const backgroundStyle = {
@@ -13,7 +14,17 @@ function SingleItem() {
 
   return (
     <div className="single-item" style={backgroundStyle}>
-        <div className="single-item__text-block">
+        <div className="text-block">
+          <div className="details">
+            <span>2019</span>
+            <span className='type'>
+              <img src={typeIcon} alt="type" />
+              Movie
+            </span>
+            <span>
+              PG
+            </span>
+          </div>
           <h3>Beyond Earth</h3>
         </div>
         <div className="play">
@@ -29,4 +40,4 @@ function SingleItem() {
   )
 }
 
-export default SingleItem
+export default SingleItem;
