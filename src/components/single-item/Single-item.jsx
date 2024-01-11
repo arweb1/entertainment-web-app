@@ -13,20 +13,8 @@ function SingleItem() {
   }
 
   return (
-    <div className="single-item" style={backgroundStyle}>
-        <div className="text-block">
-          <div className="details">
-            <span>2019</span>
-            <span className='type'>
-              <img src={typeIcon} alt="type" />
-              Movie
-            </span>
-            <span>
-              PG
-            </span>
-          </div>
-          <h3>Beyond Earth</h3>
-        </div>
+    <div className="single-item-content">
+      <div className="single-item" style={backgroundStyle}>
         <div className="play">
           <button className="play-btn">
             <img src={playBtn} alt="play icon" />
@@ -36,6 +24,20 @@ function SingleItem() {
         <div className="bookmark-item">
           <img src={bookmarkItemEmpty} alt="bookmark item" />
         </div>
+      </div>
+      <div className="text-block">
+        <div className="details">
+          <span>2019</span>
+          <span className='type'>
+            <img src={typeIcon} alt="type" />
+            Movie
+          </span>
+          <span>
+            PG
+          </span>
+        </div>
+        <h3>Beyond Earth</h3>
+      </div>
     </div>
   )
 }

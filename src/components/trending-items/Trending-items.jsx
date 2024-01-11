@@ -1,9 +1,9 @@
-import SingleItem from "../single-item/Single-item"
+import SingleTrendingItem from "../single-trending-item/Single-trending-item"
 
 function TrendingItems() {
   return (
     <div>
-      <SingleItem/>
+      <SingleTrendingItem/>
     </div>
   )
 }

@@ -1,0 +1,18 @@
+.items-list-comp{
+    margin-top: 40px;
+
+    .items-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+
+    .title{
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: -.5px;
+        margin-bottom: 32px;
+    }
+}
+
