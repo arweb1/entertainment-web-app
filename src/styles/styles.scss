@@ -117,14 +117,15 @@ legend {
 	display: block;
 }
 
-.page{
+.page {
 	background-color: #10141E;
+	min-height: 100vh;
 	padding-top: 64px;
-	padding-left: 164px; 
+	padding-left: 164px;
 	padding: 64px 64px 0 164px;
 }
 
-main{
+main {
 	max-width: 1240px;
 	height: 100%;
 	margin: 0 auto;
